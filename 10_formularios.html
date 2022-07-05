@@ -5,27 +5,39 @@
     </head>
     <body>
         <h1>Formularios</h1>
+        El siguiente cuadro de texto es un ejemplo
         <form>
+            <input type="" name="">
+        </form>
+        <br>
+        <form>
+            <!--Las validaciones se hace de lado del Servidor-->
+            <!-- .... para evitar que nos hackeen-->
+            <!-- ... pero tambien tratando que la mayor parte de los datos se ejecuten del lado del cliente para reducir la carga al servidor-->
             <p>Texto</p>
-            <input type="text"> <br>
-            <p>password</p>
-            <input type="password"> <br>
-            <p>Numeros</p>
-            <input type="number"> <br>
+            <input type="text" required="">
+            <p>Password</p>
+            <input type="password">
+            <p>Numero</p>
+            <input type="number" required=""> <!--required es para validar datos del lado del Cliente-->
             <p>Email</p>
-            <input type="email"> <br>
+            <input type="email">
             <p>Color</p>
-            <input type="color"> <br>
+            <input type="color">
             <p>Rango</p>
-            <input type="range"> <br>
+            <input type="range">
+            <p>Rango 1</p>
+            <input type="range" min="1" max="5">
             <p>Date</p>
-            <input type="date"> <br>
-            <p>Time</p>
-            <input type="time"> <br>
+            <input type="date">
+            <p>Tiempo</p>
+            <input type="time">
+            <p>Texto Area solo lectura</p>
+            <textarea readonly="">Hola como estas</textarea>
             <p>Boton</p>
-            <input type="button"> <br>
-            <p>Submit</p>
-            <input tupe="submit"> 
+            <input type="button" value="Boton">
+            <p>Enviar</p>
+            <input type="submit">
         </form>
     </body>
 </html>
